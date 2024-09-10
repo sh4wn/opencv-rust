@@ -433,6 +433,9 @@ impl Generator {
 		args.push("-includeocvrs_common.hpp".into());
 		// need to have c++14 here because VS headers contain features that require it
 		args.push("-std=c++14".into());
+		args.push("-target".into());
+		args.push("aarch64-linux-ohos".into());
+		args.push("-D_LIBCPP_HAS_MUSL_LIBC".into());
 		args
 	}
 
